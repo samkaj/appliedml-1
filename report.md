@@ -18,3 +18,24 @@ For the tree visualization, a max-depth of 3 was selected.
 <p align='center'>
 <b>Fig:</b> Decision tree produced by Graphviz with <code>max_depth=3</code>.
 </p>
+
+## Task 3
+
+The regression model we chose and got the best score with, was the MLPRegressor. Which after some fine-tuning achieved a negative mse of `-0.0006478530592890497`.
+The hyperparameters we set were: 
+`learning_rate_init=0.03`
+`max_iter=15000`
+`hidden_layer_size=(200,10)`
+we also set `early_stopping=True`
+
+## Task 4
+
+Considering the data generating function we want a regression tree to predict the output from the input. We dont want to simply classify
+the data into two classes, we want a value.
+
+
+Nothing happens if we give it a bigger depth, the graph is only 1 node deep. 
+We trained a tree regression model with `max_depth=6` and achieved a negative mse of `-0.2806332424585957`
+ In the plot, we can see that the model is overfitting on the training set. The evalutation on the test set keeps improving until
+around `max_depth=6`, then the evaluation score really starts to diverge and we can see that it overfits on the training data because it gets better at the training set, but worse on the test set.
+![training vs testing](task4.png)
