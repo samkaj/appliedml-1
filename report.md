@@ -12,9 +12,9 @@ To explain the gradient boosting classifier, we first discuss the concept of gra
 
 After trying out some different max-depths, the best one we got was a max-depth of 7, with an accuracy of `0.9178403755868545`.
 
-For the tree visualization, a max-depth of 4 was selected.
+For the tree visualization, a max-depth of 3 was selected.
 ![image](./task2.svg)
 
 <p align='center'>
-<b>Fig:</b> Decision tree produced by Graphviz with <code>max_depth=4</code>.
+<b>Fig:</b> Decision tree produced by Graphviz with <code>max_depth=3</code>.
 </p>
